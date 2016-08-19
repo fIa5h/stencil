@@ -1,22 +1,18 @@
 # kickstart-meteor-react-flowrouter
 
-Kickstart a project with Meteor, React and FlowRouter fast!
+A real time application template. Built using meteor, webpack, babel, react, flow-router and material design .
 
 1. `curl https://install.meteor.com/ | sh`
 1. `sudo apt install -y npm`
 1. `sudo apt install -y git`
-1. `git clone https://github.com/thereactivestack/kickstart-meteor-react-flowrouter.git`
-1. `cd kickstart-meteor-react-flowrouter`
+1. `git clone https://github.com/RyanThomasMusser/stencil.git`
+1. `cd stencil`
 1. `npm install`
 1. `meteor run --production`
 
-**Note** : if you just run with `meteor` you will **only** be able to connect with a browser on the same host. (Due to `GET http://localhost:3500/assets/web.js net::ERR_CONNECTION_REFUSED`)
+**Note** : sometimes if you just run with `meteor` you will **only** be able to connect with a browser on the same host. (Due to `GET http://localhost:3500/assets/web.js net::ERR_CONNECTION_REFUSED`)
 
 ### Next steps :
-
-You can try [other kickstart projects](https://github.com/thereactivestack/kickstart) with ReactRouter, FlowRouter or Redux.
-
-## [Learn how to be productive with Meteor and Webpack in 7 days on TheReactiveStack.com](https://thereactivestack.com)
 
 # Production
 You can use meteor run, meteor build, mup or anything working with Meteor.
