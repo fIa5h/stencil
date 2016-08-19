@@ -3,11 +3,16 @@ import ReactMixin from 'react-mixin';
 
 import Control from './Control';
 import List from './List';
+import Modal from '../Modals/Modal';
 
 import Tasks from 'App/collections/Tasks';
 
 @ReactMixin.decorate(ReactMeteorData)
 export default class Index extends Component {
+
+	componentDidMount() {
+		console.log('App');
+	}
 
 	//
 	//
@@ -83,6 +88,7 @@ export default class Index extends Component {
 					<Control incompleteCount={this.data.incompleteCount} hideCompleted={this.state.hideCompleted} toggleHideCompleted={this.handleToggleHideCompleted}/>
 					<List tasks={this.data.tasks}/>
 				</div>
+				<Modal userControls={this.props.userControls}/>
 			</div>
 		);
 	}

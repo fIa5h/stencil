@@ -106,3 +106,16 @@ TOAST NOTIFICATIONS
   width: 100%;
   overflow: hidden;
 }
+
+.brand-header{
+  margin-bottom: 0px;
+  margin-top: 8px;
+}
+
+#logo-wrapper{
+  margin:0px !important;
+  padding: 0px !important;
+  height: 75px;
+  margin-bottom: 32px;
+  width:100%;
+}

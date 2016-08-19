@@ -4,14 +4,6 @@ export default class JoinModal extends Component {
 
 	//
 	//
-	getMeteorData() {
-		return {currentUser: Meteor.user()};
-	}
-	//
-	//
-
-	//
-	//
 	componentDidMount() {
 		//
 		console.log('JoinModal');
@@ -27,6 +19,7 @@ export default class JoinModal extends Component {
 			//complete: function() { alert('Closed'); } // Callback for Modal close
 		});
 		//
+
 	}
 	//
 	//
@@ -40,7 +33,7 @@ export default class JoinModal extends Component {
 				overflowY: 'hidden !important'
 			}}>
 				<div className="modal-content">
-					<Accounts.ui.LoginForm/>
+					{this.props.userControls}
 				</div>
 			</div>
 		);

@@ -12,6 +12,26 @@ export default class LandingPageHeader extends Component {
 
 	//
 	//
+	renderButton() {
+		if (!!Meteor.user()) {
+			return (
+				<a className="waves-effect waves-blue btn white black-text modal-trigger hoverable" href="/home">
+					Home&nbsp;
+				</a>
+			);
+		} else {
+			return (
+				<a className="waves-effect waves-blue btn white black-text modal-trigger hoverable" href="#joinModal">
+					Join&nbsp;
+				</a>
+			);
+		}
+	}
+	//
+	//
+
+	//
+	//
 	render() {
 
 		//this is for the nav menu
@@ -28,7 +48,7 @@ export default class LandingPageHeader extends Component {
 							<a id="landing-header-logo" className="brand-logo left">Logo</a>
 							<ul className="right">
 								<li>
-									<a className="waves-effect waves-blue btn white black-text modal-trigger hoverable" href="#joinModal">Join</a>
+									{this.renderButton()}
 								</li>
 							</ul>
 						</div>

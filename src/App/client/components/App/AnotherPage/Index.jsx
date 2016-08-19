@@ -1,5 +1,6 @@
 import {Component} from 'react';
-import List from './List'
+import List from './List';
+import Modal from '../Modals/Modal';
 
 export default class Index extends Component {
 
@@ -16,10 +17,10 @@ export default class Index extends Component {
 	render() {
 		return (
 			<div>
-				<hr/>
 				<h3>Another Page!</h3>
 				<hr/>
 				<List/>
+				<Modal userControls={this.props.userControls}/>
 			</div>
 		);
 	}

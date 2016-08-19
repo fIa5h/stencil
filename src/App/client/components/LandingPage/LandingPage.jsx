@@ -95,7 +95,7 @@ export default class LandingPage extends Component {
 				</div>
 
 				<LandingPageFooter/>
-				<JoinModal/>
+				<JoinModal userControls={this.props.userControls}/>
 
 			</div>
 

@@ -2,7 +2,6 @@ import {Component} from 'react';
 import ReactMixin from 'react-mixin';
 import Header from './Navigation/Header';
 import Footer from './Navigation/Footer';
-import Modal from './Modals/Modal';
 
 export default class Index extends Component {
 
@@ -30,7 +29,6 @@ export default class Index extends Component {
 					</div>
 				</main>
 				<Footer theme={this.theme}/>
-				<Modal theme={this.theme}/>
 			</div>
 		);
 	}

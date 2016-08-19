@@ -1,4 +1,5 @@
 import {Component} from 'react';
+
 export default class Header extends Component {
 
 	//
@@ -48,6 +49,8 @@ export default class Header extends Component {
 	//
 	render() {
 
+		console.log(Meteor.user());
+
 		//this is for the nav menu
 		var translate = 'translateX(-100 %)';
 		var cssTranslate = {
@@ -72,8 +75,12 @@ export default class Header extends Component {
 						cssTranslate
 					}}>
 						<li className="logo">
-							<a id="logo-container" className="brand-logo">
-								Stencil
+							<a id="logo-wrapper" className="waves-effect menu-link flow-text modal-trigger" href="#modal1">
+								<h5 className="brand-header bold">{Meteor.user().username}
+									&nbsp;
+									<i className="material-icons flow-text">expand_more</i>
+								</h5>
+								<span className="grey-text text-lighten-1">{Meteor.user().emails[0].address}</span>
 							</a>
 						</li>
 						<li className="search">
@@ -84,19 +91,19 @@ export default class Header extends Component {
 							</div>
 						</li>
 						<li className="bold">
-							{/*<Link to="/" className="waves-effect menu-link">Landing Page</Link>*/}
-							Landing Page
+							<a className="waves-effect menu-link" href="/">
+								Landing Page
+							</a>
 						</li>
 						<li className="bold">
-							{/*<Link to="/home" className="waves-effect menu-link">Home</Link>*/}
-							Home
+							<a className="waves-effect menu-link" href="/home">
+								Home
+							</a>
 						</li>
 						<li className="bold">
-							{/*<Link to="/anotherPage" className="waves-effect menu-link">Another Page</Link>*/}
-							Another Page
-						</li>
-						<li className="bold">
-							<a className="waves-effect menu-link modal-trigger" href="#modal1">Modal</a>
+							<a className="waves-effect menu-link" href="/home/anotherPage">
+								Another Page
+							</a>
 						</li>
 						<li className="bold">
 							<a className="waves-effect menu-link" onClick={function() {
