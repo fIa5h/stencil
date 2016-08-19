@@ -1,4 +1,4 @@
-# Stencil
+![alt tag](https://raw.githubusercontent.com/RyanThomasMusser/stencil/master/public/img/Stencil.png)
 
 A real time application template for desktop, mobile, iOS and android.
 
