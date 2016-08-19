@@ -77,11 +77,11 @@ export default class Index extends Component {
 				</p>
 				<br/>
 				<p className="center">
-					If you create another user and log in on a separate incognito window, you will see this section of the page update in real time, with user permissions enforced.
+					Create another user and log in on a separate incognito window, then watch the windows side by side. You will see the page update in real time, with user permissions enforced.
 				</p>
 				<br/>
 				<p className="center">
-					For tasks that you've authored, you can delete them or make them public/private. For tasks that another user has authored, you can only mark any task as completed.
+					You can delete, mark complete or make public/private any task that you've authored. For tasks that another user has authored, you can only mark that task as completed.
 				</p>
 				<hr/>
 				<div className="container">
