@@ -1,0 +1,108 @@
+.header-container-div{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.body-container{
+  position:relative;
+  margin-top: 100px !important;
+  margin-bottom: 35px !important;
+}
+
+footer.page-footer{
+  margin-top:0px !important;
+}
+
+.parallax{
+  opacity:.6;
+}
+
+.parallax-container {
+  height: 550px !important;
+}
+
+.valign-wrapper{
+  height:100%;
+}
+
+.waves-effect.waves-blue .waves-ripple {
+ /* The alpha value allows the text and background color
+ of the button to still show through. */
+  background-color: rgba(33,150,243, 0.65);
+}
+
+#landing-footer{
+  padding-left: 0px;
+}
+
+.modal {
+  max-height: 90% !important;
+  max-width:90% !important;
+}
+
+#landing-header-logo{
+  padding-left:15px;
+}
+
+.card.large {
+    height: 100% !important;
+}
+
+.btn.btn-small{
+  line-height: 24px;
+  height: 24px ;
+  font-size: 85%;
+}
+
+/*
+
+TOAST NOTIFICATIONS
+
+*/
+
+@media (max-width: 600px) {
+  #toast-container {
+    padding:15px !important;
+  }
+  .toast{
+    font-size:90% !important;
+  }
+}
+
+@media (min-width: 601px) {
+
+  #toast-container {
+    top: auto !important;
+    left: auto !important;
+    bottom: 10%;
+    right:7%;
+    max-width:300px !important;
+    text-align:center !important;
+  }
+
+  .toast{
+    max-width:400px !important;
+    font-size:95% !important;
+    text-align:center !important;
+  }
+
+}
+
+/*
+
+/ TOAST NOTIFICATIONS
+
+*/
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.valign{
+  width: 100%;
+}
+.section-container{
+  width: 100%;
+  overflow: hidden;
+}
