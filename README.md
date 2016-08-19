@@ -1,6 +1,8 @@
 # Stencil
 
-A real time application template. Built using meteor, webpack, babel, react, flow-router and material design .
+A real time application template for desktop, mobile, iOS and android.
+
+Built using meteor, webpack, babel, react, flow-router and material design .
 
 1. `curl https://install.meteor.com/ | sh`
 1. `sudo apt install -y npm`
