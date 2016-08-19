@@ -1,4 +1,4 @@
-# kickstart-meteor-react-flowrouter
+# Stencil
 
 A real time application template. Built using meteor, webpack, babel, react, flow-router and material design .
 
