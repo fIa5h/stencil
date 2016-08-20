@@ -1,58 +1,62 @@
-.header-container-div{
-  position: absolute;
-  top: 0px;
-  width: 100%;
+.header-container-div {
+    position: absolute;
+    top: 0px;
+    width: 100%;
 }
-
-.body-container{
-  position:relative;
-  margin-top: 100px !important;
-  margin-bottom: 35px !important;
+.body-container {
+    position: relative;
+    margin-top: 70px !important;
+    margin-bottom: 35px !important;
 }
-
-footer.page-footer{
-  margin-top:0px !important;
+footer.page-footer {
+    margin-top: 0px !important;
 }
-
-.parallax{
-  opacity:.6;
+.parallax {
+    opacity: .2;
 }
-
 .parallax-container {
-  height: 550px !important;
+    height: 500px !important;
 }
-
-.valign-wrapper{
-  height:100%;
+.valign-wrapper {
+    height: 100%;
 }
-
+.valign-wrapper-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .13;
+    z-index: -1;
+}
 .waves-effect.waves-blue .waves-ripple {
- /* The alpha value allows the text and background color
+    /* The alpha value allows the text and background color
  of the button to still show through. */
-  background-color: rgba(33,150,243, 0.65);
+    background-color: rgba(33, 150, 243, 0.65);
 }
-
-#landing-footer{
-  padding-left: 0px;
+#landing-footer {
+    padding-left: 0px;
 }
-
 .modal {
-  max-height: 90% !important;
-  max-width:90% !important;
+    max-height: 90% !important;
+    max-width: 90% !important;
 }
-
-#landing-header-logo{
-  padding-left:15px;
+#landing-header-logo {
+    padding-left: 15px;
 }
-
 .card.large {
     height: 100% !important;
 }
-
-.btn.btn-small{
-  line-height: 24px;
-  height: 24px ;
-  font-size: 85%;
+.btn.btn-small {
+    line-height: 24px;
+    height: 24px;
+    font-size: 85%;
+}
+.bold {
+    font-weight: bold!important;
+}
+.text-shadow {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
 }
 
 /*
@@ -62,31 +66,27 @@ TOAST NOTIFICATIONS
 */
 
 @media (max-width: 600px) {
-  #toast-container {
-    padding:15px !important;
-  }
-  .toast{
-    font-size:90% !important;
-  }
+    #toast-container {
+        padding: 15px !important;
+    }
+    .toast {
+        font-size: 90% !important;
+    }
 }
-
 @media (min-width: 601px) {
-
-  #toast-container {
-    top: auto !important;
-    left: auto !important;
-    bottom: 10%;
-    right:7%;
-    max-width:300px !important;
-    text-align:center !important;
-  }
-
-  .toast{
-    max-width:400px !important;
-    font-size:95% !important;
-    text-align:center !important;
-  }
-
+    #toast-container {
+        top: auto !important;
+        left: auto !important;
+        bottom: 10%;
+        right: 7%;
+        max-width: 300px !important;
+        text-align: center !important;
+    }
+    .toast {
+        max-width: 400px !important;
+        font-size: 95% !important;
+        text-align: center !important;
+    }
 }
 
 /*
@@ -95,27 +95,87 @@ TOAST NOTIFICATIONS
 
 */
 
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-.valign{
-  width: 100%;
+.material-icons.md-18 {
+    font-size: 18px;
 }
-.section-container{
-  width: 100%;
-  overflow: hidden;
+.material-icons.md-24 {
+    font-size: 24px;
+}
+.material-icons.md-36 {
+    font-size: 36px;
+}
+.material-icons.md-48 {
+    font-size: 48px;
+}
+.valign {
+    width: 100%;
+}
+.section-container {
+    width: 100%;
+    overflow: hidden;
+}
+.brand-header {
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+#logo-wrapper {
+    margin: 0px !important;
+    padding: 0px !important;
+    height: 75px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+#landing-header-logo {
+    height: 60px;
 }
 
-.brand-header{
-  margin-bottom: 0px;
-  margin-top: 8px;
+/*
+    CONTROLS
+*/
+
+.inset-lever {
+    -webkit-box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.5);
+}
+.switch label input[type=checkbox]:checked+ .lever:after {
+    background-color: #f1f1f1 !important;
+}
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #00e676 !important;
+}
+.control-icon {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
+    transition-property: color, text-shadow;
+    transition-duration: .3s, .3s;
+}
+.control-icon:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .6);
+}
+.control-icon.inactive {
+    color: #818181;
+}
+#mobile-menu-toggle-button {
+    position: absolute;
+    text-align: center;
+    height: 35px;
+    width: 48px;
+    left: 0em;
+    top: -1.7rem;
+    float: none;
+    margin-left: 1.5rem;
+    color: #fff;
+    z-index: 2;
+}
+#mobile-menu-toggle-button {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
+    transition-property: text-shadow;
+    transition-duration: .3s;
+}
+#mobile-menu-toggle-button:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .6);
 }
 
-#logo-wrapper{
-  margin:0px !important;
-  padding: 0px !important;
-  height: 75px;
-  margin-bottom: 32px;
-  width:100%;
-}
+/*
+    /CONTROLS
+*/

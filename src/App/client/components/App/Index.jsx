@@ -10,11 +10,16 @@ export default class Index extends Component {
 	//don't pass any 'lighten' or 'accent'
 	//attributes into the theme variable,
 	//just the color name, i.e. 'red' or 'green'
-	theme = 'blue';
+	theme = {
+		textColor: " green-text text-accent-3 ",
+		accentColor: " green accent-3 ",
+		baseColor: " grey darken-3 ",
+		backgroundColor: " grey lighten-3 "
+	}
 
 	render() {
 		return (
-			<div className={this.theme + " lighten-5"}>
+			<div className={this.theme.backgroundColor}>
 				<Header theme={this.theme}/>
 				<main>
 					<div className="container body-container">

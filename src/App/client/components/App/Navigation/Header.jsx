@@ -1,4 +1,5 @@
 import {Component} from 'react';
+import Controls from './Controls';
 
 export default class Header extends Component {
 
@@ -61,13 +62,13 @@ export default class Header extends Component {
 			<div className="header-container-div">
 
 				<header>
-					<nav className={this.props.theme + " top-nav"}>
+					<nav className={this.props.theme.baseColor + " top-nav"}>
 						<div className="nav-wrapper">
-							<a href="#" className="brand-logo center">Stencil</a>
+							<Controls theme={this.props.theme}/>
 						</div>
 					</nav>
 					<div className="container">
-						<a href="#" data-activates="nav-mobile" className="button-collapse top-nav full hide-on-large-only">
+						<a id="mobile-menu-toggle-button" href="#" data-activates="nav-mobile" className="button-collapse top-nav full hide-on-large-only">
 							<i className="material-icons">menu</i>
 						</a>
 					</div>
