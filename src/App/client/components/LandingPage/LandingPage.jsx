@@ -35,13 +35,11 @@ export default class LandingPage extends Component {
 
 				<LandingPageHeader theme={this.theme}/>
 
-				<div className={this.theme.accentColor + " section-container white-text hoverable z-depth-1"}>
+				<div className="grey lighten-5 section-container white-text hoverable z-depth-1">
 					<div className="container">
 						<div className="col s12 center">
-							<p className="white-text">
-								<b>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat.
-								</b>
+							<p className="big-text-2">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat.
 							</p>
 						</div>
 					</div>
@@ -51,7 +49,7 @@ export default class LandingPage extends Component {
 					<div className="parallax"><img src="img/stadium-bw.jpg"/></div>
 					<div className={this.theme.accentColor + "valign-wrapper-background"}></div>
 					<div className="valign-wrapper">
-						<h2 className="valign center white-text text-shadow ">This should be vertically aligned</h2>
+						<h2 className="valign center white-text">This should be vertically aligned</h2>
 					</div>
 				</div>
 
@@ -63,7 +61,7 @@ export default class LandingPage extends Component {
 								<div className="col s12 m4">
 									<div className="icon-block">
 										<div className="center">
-											<img src="img/stars-material-md.png"/>
+											<img className="landing-graphic" src="img/stars-material.png"/>
 										</div>
 										<h5 className={this.theme.textColor + " center bold"}>Three Sport Dynasties</h5>
 										<p className="white-text">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
@@ -73,7 +71,7 @@ export default class LandingPage extends Component {
 								<div className="col s12 m4">
 									<div className="icon-block">
 										<div className="center">
-											<img src="img/commissioner-material-md.png"/>
+											<img className="landing-graphic" src="img/commissioner-material.png"/>
 										</div>
 										<h5 className={this.theme.textColor + " center bold"}>Commissioners Rule</h5>
 
@@ -84,7 +82,7 @@ export default class LandingPage extends Component {
 								<div className="col s12 m4">
 									<div className="icon-block">
 										<div className="center">
-											<img src="img/live-material-md.png"/>
+											<img className="landing-graphic" src="img/live-material.png"/>
 										</div>
 										<h5 className={this.theme.textColor + " center bold"}>Real Time</h5>
 

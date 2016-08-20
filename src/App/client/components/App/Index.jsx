@@ -14,7 +14,7 @@ export default class Index extends Component {
 		textColor: " green-text text-accent-3 ",
 		accentColor: " green accent-3 ",
 		baseColor: " grey darken-3 ",
-		backgroundColor: " grey lighten-3 "
+		backgroundColor: " grey lighten-2 "
 	}
 
 	render() {

@@ -46,7 +46,7 @@ export default class LandingPageHeader extends Component {
 					<nav>
 						<div className={this.props.theme.baseColor + " nav-wrapper"}>
 							{/*<a id="landing-header-logo" className={this.props.theme.textColor + " brand-logo left"}>Logo</a>*/}
-							<img id="landing-header-logo" className="brand-logo left" src="img/trophy-material-sm.png"/>
+							<img id="landing-header-logo" className="brand-logo left" src="img/trophy-material-md.png"/>
 							<ul className="right">
 								<li>
 									{this.renderButton()}
