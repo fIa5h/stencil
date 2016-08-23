@@ -1,3 +1,23 @@
+html, body {
+    height: 100%;
+}
+main {
+    min-height: 100%;
+    height: auto !important;
+    /* This line and the next line are not necessary unless you need IE6 support */
+    height: 100%;
+    background-color: #e0e0e0;
+    padding-bottom: 30px;
+}
+#react-root {
+    height: 100%;
+}
+.app-footer-container {
+    margin-top: -40px;
+}
+.full-height {
+    height: 100%;
+}
 .header-container-div {
     position: absolute;
     top: 0px;
@@ -26,7 +46,7 @@ footer.page-footer {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .7;
+    opacity: .5;
     z-index: -1;
 }
 .waves-effect.waves-blue .waves-ripple {
@@ -41,9 +61,45 @@ footer.page-footer {
     max-height: 90% !important;
     max-width: 90% !important;
 }
-#landing-header-logo {
-    padding-left: 15px;
+
+/*
+    LOGO
+*/
+
+.landing-header-logo-container {
+    padding-left: 5px;
 }
+.landing-header-logo {
+    height: 60px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+}
+.parallax-logo {
+    height: 275px;
+}
+.footer-logo {
+    max-height: 142px;
+}
+.header-logo {
+    padding-top: 5px;
+    height: 65px;
+}
+.brand-header {
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+#logo-wrapper {
+    margin: 0px !important;
+    padding: 0px !important;
+    height: 75px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+/*
+    / LOGO
+*/
+
 .card.large {
     height: 100% !important;
 }
@@ -56,13 +112,10 @@ footer.page-footer {
     font-weight: bold!important;
 }
 .text-shadow {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
 }
 .landing-graphic {
     height: 165px;
-}
-#landing-header-logo {
-    height: 62px;
 }
 .big-text-1 {
     font-size: 110%;
@@ -79,8 +132,26 @@ footer.page-footer {
 .big-text-5 {
     font-size: 150%;
 }
-.btn {
-    background-color: #00c853 !important;
+.padding-1 {
+    padding: 5px;
+}
+.padding-2 {
+    padding: 10px;
+}
+.padding-3 {
+    padding: 15px;
+}
+.padding-4 {
+    padding: 20px;
+}
+.padding-5 {
+    padding: 25px;
+}
+.no-margin {
+    margin: 0px !important;
+}
+.uppercase {
+    text-transform: uppercase;
 }
 
 /*
@@ -138,19 +209,8 @@ TOAST NOTIFICATIONS
     width: 100%;
     overflow: hidden;
 }
-.brand-header {
-    margin-bottom: 0px;
-    margin-top: 8px;
-}
-#logo-wrapper {
-    margin: 0px !important;
-    padding: 0px !important;
-    height: 75px;
-    margin-bottom: 32px;
-    width: 100%;
-}
-#landing-header-logo {
-    height: 60px;
+.parallax-row {
+    max-height: 100%;
 }
 
 /*

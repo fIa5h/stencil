@@ -1,8 +1,5 @@
 import {Component} from 'react';
 
-//want to import secific css? see below:
-//import 'App/client/css/App.import.css'
-
 import LandingPageFooter from './LandingPageFooter';
 import LandingPageHeader from './LandingPageHeader';
 import JoinModal from './JoinModal';
@@ -39,7 +36,7 @@ export default class LandingPage extends Component {
 					<div className="container">
 						<div className="col s12 center">
 							<p className="big-text-2">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat.
+								<b>Don't have an invite to play?</b>&nbsp;&nbsp;&nbsp;<a className="waves-effect waves-light btn btn-small">Request invitation</a>
 							</p>
 						</div>
 					</div>
@@ -49,7 +46,18 @@ export default class LandingPage extends Component {
 					<div className="parallax"><img src="img/stadium-bw.jpg"/></div>
 					<div className={this.theme.accentColor + "valign-wrapper-background"}></div>
 					<div className="valign-wrapper">
-						<h2 className="valign center white-text">This should be vertically aligned</h2>
+						<div className="valign center parallax-row">
+							<img className="parallax-logo img-responsive" src="img/FSL-crest.png"/>
+							<h3 className="white-text text-shadow bold uppercase">
+								Build a fantasy sports dynasty
+							</h3>
+							<h5 className="white-text text-shadow uppercase bold hide-on-med-and-down">
+								Start building your football, baseball and basketball keeper franchise.
+							</h5>
+							<a className="waves-effect btn-large modal-trigger hoverable big-text-4" href="#joinModal">
+								Join&nbsp;
+							</a>
+						</div>
 					</div>
 				</div>
 
@@ -59,34 +67,34 @@ export default class LandingPage extends Component {
 
 							<div className="row white-text">
 								<div className="col s12 m4">
-									<div className="icon-block">
+									<div className="icon-block padding-3">
 										<div className="center">
-											<img className="landing-graphic" src="img/stars-material.png"/>
+											<img className="landing-graphic" src="img/trophy-material.png"/>
 										</div>
-										<h5 className={this.theme.textColor + " center bold"}>Three Sport Dynasties</h5>
-										<p className="white-text">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+										<h5 className={this.theme.textColor + " center bold"}>Multi Sport Dynasties</h5>
+										<p className="white-text big-text-2">Football, basketball and baseball. Want to trade LeBron James for Mike Trout or Adrian Peterson? Want to trade draft equity for players? You get where we're going with this... and you love it.</p>
 									</div>
 								</div>
 
 								<div className="col s12 m4">
-									<div className="icon-block">
+									<div className="icon-block padding-3">
 										<div className="center">
 											<img className="landing-graphic" src="img/commissioner-material.png"/>
 										</div>
 										<h5 className={this.theme.textColor + " center bold"}>Commissioners Rule</h5>
 
-										<p className="white-text">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+										<p className="white-text big-text-2">Power to the commissioners! Gone are the days of wishing your platform was more flexible. Welcome to the most commissioner friendly fantasy sports platform on the internet.</p>
 									</div>
 								</div>
 
 								<div className="col s12 m4">
-									<div className="icon-block">
+									<div className="icon-block padding-3">
 										<div className="center">
 											<img className="landing-graphic" src="img/live-material.png"/>
 										</div>
 										<h5 className={this.theme.textColor + " center bold"}>Real Time</h5>
-
-										<p className="white-text">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+										<p>Break out social and data</p>
+										<p className="white-text big-text-2">Live data + live social = living fantasy leagues. Watch your team's stats pile up in real time. Smack talk your league in real time. See advanced realtime analytics. Your league is alive!</p>
 									</div>
 								</div>
 							</div>

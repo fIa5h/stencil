@@ -18,7 +18,7 @@ export default class List extends Component {
 	//
 	renderNotes() {
 		return (
-			<li className="collection-item">Rendered List Item</li>
+			<li className="collection-item">Rendered List Item - LEAGUE #1</li>
 		);
 	}
 	//
@@ -30,7 +30,7 @@ export default class List extends Component {
 		return (
 			<div>
 				<ul className="collection">
-					<li className="collection-item">Static List Item</li>
+					<li className="collection-item">Static List Item - LEAGUE #2</li>
 					{this.renderNotes()}
 				</ul>
 			</div>

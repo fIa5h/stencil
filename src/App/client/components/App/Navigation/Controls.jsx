@@ -50,7 +50,10 @@ export default class Controls extends Component {
 		//console.log(Meteor.user());
 
 		return (
-			<div>
+			<div class="center">
+				<a className="brand-logo center">
+					<img className="header-logo" src="img/FSL-crest-md.png"/>
+				</a>
 				<ul className="right">
 					<li>
 						<div className="switch">

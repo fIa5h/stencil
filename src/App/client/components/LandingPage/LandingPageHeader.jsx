@@ -22,7 +22,7 @@ export default class LandingPageHeader extends Component {
 		} else {
 			return (
 				<a className="waves-effect btn white black-text modal-trigger hoverable" href="#joinModal">
-					Join&nbsp;
+					Sign In&nbsp;
 				</a>
 			);
 		}
@@ -45,8 +45,9 @@ export default class LandingPageHeader extends Component {
 				<div className="navbar-fixed hoverable">
 					<nav>
 						<div className={this.props.theme.baseColor + " nav-wrapper"}>
-							{/*<a id="landing-header-logo" className={this.props.theme.textColor + " brand-logo left"}>Logo</a>*/}
-							<img id="landing-header-logo" className="brand-logo left" src="img/trophy-material-md.png"/>
+							<span className="left landing-header-logo-container">
+								<img className="landing-header-logo" src="img/FSL-layered.png"/>
+							</span>
 							<ul className="right">
 								<li>
 									{this.renderButton()}

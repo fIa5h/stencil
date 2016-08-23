@@ -19,7 +19,7 @@ export default class Index extends Component {
 
 	render() {
 		return (
-			<div className={this.theme.backgroundColor}>
+			<div className={this.theme.backgroundColor + "full-height"}>
 				<Header theme={this.theme}/>
 				<main>
 					<div className="container body-container">
