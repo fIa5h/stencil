@@ -36,7 +36,7 @@ export default class LandingPage extends Component {
 					<div className="container">
 						<div className="col s12 center">
 							<p className="big-text-2">
-								<b>Don't have an invite to play?</b>&nbsp;&nbsp;&nbsp;<a className="waves-effect waves-light btn btn-small">Request invitation</a>
+								Don't have an invite to play?&nbsp;&nbsp;&nbsp;<a className="waves-effect waves-light btn blue btn-small">Request invitation</a>
 							</p>
 						</div>
 					</div>
@@ -47,16 +47,40 @@ export default class LandingPage extends Component {
 					<div className={this.theme.accentColor + "valign-wrapper-background"}></div>
 					<div className="valign-wrapper">
 						<div className="valign center parallax-row">
-							<img className="parallax-logo img-responsive" src="img/FSL-crest.png"/>
-							<h3 className="white-text text-shadow bold uppercase">
+
+							<img className="parallax-logo img-responsive" src="img/FSL-crest.png"/> {/*Landing Image*/}
+
+							{/*Large*/}
+							<h3 className="white-text text-shadow bold uppercase hide-on-med-and-down">
 								Build a fantasy sports dynasty
 							</h3>
-							<h5 className="white-text text-shadow uppercase bold hide-on-med-and-down">
-								Start building your football, baseball and basketball keeper franchise.
+							<h5 className="white-text text-shadow hide-on-med-and-down uppercase">
+								Real-time, multi-sport, social fantasy leagues
 							</h5>
-							<a className="waves-effect btn-large modal-trigger hoverable big-text-4" href="#joinModal">
+							{/*Large*/}
+
+							{/*Med*/}
+							<h4 className="white-text text-shadow bold uppercase hide-on-small-only hide-on-large-only">
+								Build a fantasy sports dynasty
+							</h4>
+							<h5 className="white-text text-shadow hide-on-small-only uppercase hide-on-large-only">
+								Real-time, multi-sport, social fantasy leagues
+							</h5>
+							{/*Med*/}
+
+							{/*Small*/}
+							<h5 className="white-text text-shadow hide-on-med-and-up bold uppercase">
+								Build a fantasy sports dynasty
+							</h5>
+							<p className="white-text text-shadow hide-on-med-and-up big-text-1 uppercase">
+								Real-time, multi-sport, social fantasy leagues
+							</p>
+							{/*Small*/}
+
+							<a className="waves-effect btn-large blue modal-trigger hoverable big-text-4" href="#joinModal">
 								Join&nbsp;
 							</a>
+
 						</div>
 					</div>
 				</div>
@@ -71,8 +95,8 @@ export default class LandingPage extends Component {
 										<div className="center">
 											<img className="landing-graphic" src="img/trophy-material.png"/>
 										</div>
-										<h5 className={this.theme.textColor + " center bold"}>Multi Sport Dynasties</h5>
-										<p className="white-text big-text-2">Football, basketball and baseball. Want to trade LeBron James for Mike Trout or Adrian Peterson? Want to trade draft equity for players? You get where we're going with this... and you love it.</p>
+										<h5 className={this.theme.textColor + " center bold"}>Multisport Dynasties</h5>
+										<p className="white-text big-text-2">Football, basketball and baseball leagues. Want to trade LeBron James for Mike Trout or Adrian Peterson? Want to trade draft equity for players? You get where we're going with this... and you love it.</p>
 									</div>
 								</div>
 
@@ -81,7 +105,7 @@ export default class LandingPage extends Component {
 										<div className="center">
 											<img className="landing-graphic" src="img/commissioner-material.png"/>
 										</div>
-										<h5 className={this.theme.textColor + " center bold"}>Commissioners Rule</h5>
+										<h5 className={this.theme.textColor + " center bold"}>In Commissioners We Trust</h5>
 
 										<p className="white-text big-text-2">Power to the commissioners! Gone are the days of wishing your platform was more flexible. Welcome to the most commissioner friendly fantasy sports platform on the internet.</p>
 									</div>
@@ -92,9 +116,8 @@ export default class LandingPage extends Component {
 										<div className="center">
 											<img className="landing-graphic" src="img/live-material.png"/>
 										</div>
-										<h5 className={this.theme.textColor + " center bold"}>Real Time</h5>
-										<p>Break out social and data</p>
-										<p className="white-text big-text-2">Live data + live social = living fantasy leagues. Watch your team's stats pile up in real time. Smack talk your league in real time. See advanced realtime analytics. Your league is alive!</p>
+										<h5 className={this.theme.textColor + " center bold"}>Real Time Stats & Social</h5>
+										<p className="white-text big-text-2">Live data + live social = living fantasy leagues. Watch your team's stats pile up while you smack talk your league in real time. No empty message boards and page refreshes.</p>
 									</div>
 								</div>
 							</div>
@@ -107,7 +130,15 @@ export default class LandingPage extends Component {
 					<div className="parallax"><img src="img/grass-bw.jpg"/></div>
 					<div className={this.theme.accentColor + "valign-wrapper-background"}></div>
 					<div className="valign-wrapper">
-						<h2 className="valign center white-text">This should be vertically aligned</h2>
+						<p className="valign center white-text bold text-shadow padding-5 big-text-4">
+							Pick your sports
+							<br/>
+							Draft your team
+							<br/>
+							Blah Blah Blah
+							<br/>
+							Derp Derp Derp
+						</p>
 					</div>
 				</div>
 

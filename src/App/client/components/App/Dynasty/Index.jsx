@@ -17,7 +17,7 @@ export default class Index extends Component {
 	render() {
 		return (
 			<div>
-				<h3>Another Page!</h3>
+				<h3>Dynasty!</h3>
 				<hr/>
 				<List/>
 				<Modal userControls={this.props.userControls}/>

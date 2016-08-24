@@ -61,6 +61,9 @@ footer.page-footer {
     max-height: 90% !important;
     max-width: 90% !important;
 }
+.green.accent-5 {
+    background-color: #008838 !important;
+}
 
 /*
     LOGO
@@ -117,42 +120,6 @@ footer.page-footer {
 .landing-graphic {
     height: 165px;
 }
-.big-text-1 {
-    font-size: 110%;
-}
-.big-text-2 {
-    font-size: 120%;
-}
-.big-text-3 {
-    font-size: 130%;
-}
-.big-text-4 {
-    font-size: 140%;
-}
-.big-text-5 {
-    font-size: 150%;
-}
-.padding-1 {
-    padding: 5px;
-}
-.padding-2 {
-    padding: 10px;
-}
-.padding-3 {
-    padding: 15px;
-}
-.padding-4 {
-    padding: 20px;
-}
-.padding-5 {
-    padding: 25px;
-}
-.no-margin {
-    margin: 0px !important;
-}
-.uppercase {
-    text-transform: uppercase;
-}
 
 /*
 
@@ -174,14 +141,25 @@ TOAST NOTIFICATIONS
         left: auto !important;
         bottom: 10%;
         right: 7%;
-        max-width: 300px !important;
+        max-width: 600px !important;
         text-align: center !important;
     }
     .toast {
-        max-width: 400px !important;
+        max-width: 100% !important;
         font-size: 95% !important;
         text-align: center !important;
     }
+    .toast-truncate {
+        display: block !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.notification-avatar {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
 }
 
 /*
@@ -212,6 +190,52 @@ TOAST NOTIFICATIONS
 .parallax-row {
     max-height: 100%;
 }
+
+/*
+
+APP MENU
+APP MENU
+APP MENU
+APP MENU
+
+*/
+
+.user-nav-li {
+    margin-bottom: 80px;
+}
+.avatar-image {
+    height: 65px;
+}
+.avatar-image-container {
+    height: 65px !important;
+    margin-top: 10px !important;
+    margin-bottom: 5px !important;
+}
+.menu-user-info {
+    height: 20px !important;
+    line-height: 20px !important;
+}
+.nav-icon {
+    vertical-align: middle !important;
+    display: inline-flex !important;
+}
+.nav-link {
+    height: auto !important;
+    padding-bottom: 10px !important;
+}
+#nav-mobile li.search {
+    top: 145px !important;
+}
+
+/*
+
+APP MENU
+APP MENU
+APP MENU
+APP MENU
+
+*/
+
 
 /*
     CONTROLS
@@ -262,4 +286,50 @@ TOAST NOTIFICATIONS
 
 /*
     /CONTROLS
+*/
+
+
+/*
+    OVERRIDES
+*/
+
+.big-text-1 {
+    font-size: 110% !important;
+}
+.big-text-2 {
+    font-size: 120% !important;
+}
+.big-text-3 {
+    font-size: 130% !important;
+}
+.big-text-4 {
+    font-size: 140% !important;
+}
+.big-text-5 {
+    font-size: 150% !important;
+}
+.padding-1 {
+    padding: 5px !important;
+}
+.padding-2 {
+    padding: 10px !important;
+}
+.padding-3 {
+    padding: 15px !important;
+}
+.padding-4 {
+    padding: 20px !important;
+}
+.padding-5 {
+    padding: 25px !important;
+}
+.no-margin {
+    margin: 0px !important;
+}
+.uppercase {
+    text-transform: uppercase !important;
+}
+
+/*
+    /OVERRIDES
 */

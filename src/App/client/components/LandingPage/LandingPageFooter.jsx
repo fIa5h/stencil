@@ -61,7 +61,7 @@ export default class LandingPageFooter extends Component {
 					</div>
 					<div className="footer-copyright">
 						<div className="container">
-							© Fantasy Sports Land 2016
+							© The Fantasy Sports League 2016
 							<a className="grey-text text-lighten-4 right" href="#!">All Rights Reserved</a>
 						</div>
 					</div>

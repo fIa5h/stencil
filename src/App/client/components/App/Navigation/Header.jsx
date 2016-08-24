@@ -14,6 +14,10 @@ export default class Header extends Component {
 		//App.jsx as theme={this.theme} and is now available
 		//under this.props.theme, which we use in the render method
 
+		//we are going to use collapsible sections on our nav
+		//so we need to initialize that below
+		$('.collapsible').collapsible();
+
 		$('.button-collapse').sideNav({
 			menuWidth: 300, // Default is 240
 			//closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
@@ -22,7 +26,7 @@ export default class Header extends Component {
 		});
 
 		//so here's our fix for the above issue...
-		$('.menu-link').click(function() {
+		$('.menu-link-collapse').click(function() {
 			if (window.innerWidth < 993) {
 				$('.button-collapse').sideNav('hide');
 			}
@@ -75,15 +79,25 @@ export default class Header extends Component {
 					<ul id="nav-mobile" className="side-nav fixed hoverable" style={{
 						cssTranslate
 					}}>
-						<li className="logo">
-							<a id="logo-wrapper" className="waves-effect menu-link flow-text modal-trigger" href="#modal1">
-								<h5 className="brand-header bold">{Meteor.user().username}
-									&nbsp;
-									<i className="material-icons flow-text">expand_more</i>
-								</h5>
-								<span className="grey-text text-lighten-1">{Meteor.user().emails[0].address}</span>
+
+						<li className="center user-nav-li">
+							<a className="waves-effect modal-trigger nav-link" href="#modal1">
+								<div className="avatar-image-container center">
+									<img src={Meteor.user().avatar || "/img/blank-avatar.png"} alt="" className="circle avatar-image"/>
+								</div>
+								<div className="bold big-text-2 center menu-user-info">
+									{"@" + Meteor.user().username}&nbsp;<span className="nav-icon">
+										<i className="material-icons">expand_more</i>
+									</span>
+								</div>
+								<div className="menu-user-info grey-text text-lighten-1">
+									{Meteor.user().emails
+										? Meteor.user().emails[0].address
+										: 'No verified email...'}
+								</div>
 							</a>
 						</li>
+
 						<li className="search">
 							<div id="search-card" className="search-wrapper card hoverable">
 								<input id="search"/>
@@ -91,26 +105,58 @@ export default class Header extends Component {
 								<div className="search-results"></div>
 							</div>
 						</li>
+
 						<li className="bold">
-							<a className="waves-effect menu-link" href="/">
-								Landing Page
-							</a>
-						</li>
-						<li className="bold">
-							<a className="waves-effect menu-link" href="/home">
+							<a className="waves-effect menu-link menu-link-collapse" href="/home">
 								Home
 							</a>
 						</li>
+
 						<li className="bold">
-							<a className="waves-effect menu-link" href="/home/anotherPage">
-								Another Page
-							</a>
+							<ul className="collapsible collapsible-accordion">
+								<li className="bold">
+									<a className="collapsible-header menu-link waves-effect">Dynasties
+									</a>
+									<div className="collapsible-body">
+										<ul>
+											<li>
+												<a className="waves-effect menu-link menu-link-collapse" href="/home/dynasty">
+													Dynasty
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
 						</li>
+
+						<li className="bold">
+							<ul className="collapsible collapsible-accordion">
+								<li className="bold">
+									<a className="collapsible-header menu-link waves-effect">Leagues
+									</a>
+									<div className="collapsible-body">
+										<ul>
+											<li>
+												<a className="waves-effect menu-link menu-link-collapse" href="/home/league">
+													League
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</li>
+
 						<li className="bold">
 							<a className="waves-effect menu-link" onClick={function() {
-								Materialize.toast('Yo, something happened...', 5000, 'rounded toast-bottom-right')
+								var message = '<span class="big-text-1"><b>@user</b></span>&nbsp;&nbsp;Yo yo yo yo yo, this text is to long to fit inside this notification this text is to long to fit inside this notification...';
+								var length = 5000;
+								var classes = 'grey darken-4 toast-bottom-right z-depth-5 padding-3 toast-truncate';
+								Materialize.toast(message, length, classes);
 							}}>Notification</a>
 						</li>
+
 					</ul>
 				</header>
 			</div>

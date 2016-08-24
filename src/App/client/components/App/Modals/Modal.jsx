@@ -25,7 +25,11 @@ export default class Modal extends Component {
 					<b>
 						<h4>{Meteor.user().username}</h4>
 					</b>
-					<h5 className="grey-text text-lighten-1 flow-text">{Meteor.user().emails[0].address}</h5>
+					<h5 className="grey-text text-lighten-1 flow-text">
+						{Meteor.user().emails
+							? Meteor.user().emails[0].address
+							: 'No verified email...'}
+					</h5>
 					<br/> {this.props.userControls}
 				</div>
 			</div>

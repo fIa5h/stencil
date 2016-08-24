@@ -34,7 +34,7 @@ export default class Footer extends Component {
 							</div>
 							<div className="col l4 s4">
 								<div className="valign-wrapper">
-									<div className="valign center"><img className="responsive-img footer-logo" src="img/FSL-crest-md.png"/></div>
+									<div className="valign center"><img className="responsive-img footer-logo" src="/img/FSL-crest-md.png"/></div>
 								</div>
 							</div>
 							<div className="col l4 s4 center">

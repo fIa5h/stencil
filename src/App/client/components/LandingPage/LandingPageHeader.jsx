@@ -15,13 +15,13 @@ export default class LandingPageHeader extends Component {
 	renderButton() {
 		if (!!Meteor.user()) {
 			return (
-				<a className="waves-effect btn white black-text modal-trigger hoverable" href="/home">
+				<a className="waves-effect btn blue modal-trigger hoverable" href="/home">
 					Home&nbsp;
 				</a>
 			);
 		} else {
 			return (
-				<a className="waves-effect btn white black-text modal-trigger hoverable" href="#joinModal">
+				<a className="waves-effect btn blue modal-trigger hoverable" href="#joinModal">
 					Sign In&nbsp;
 				</a>
 			);

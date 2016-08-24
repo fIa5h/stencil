@@ -52,7 +52,7 @@ export default class Controls extends Component {
 		return (
 			<div class="center">
 				<a className="brand-logo center">
-					<img className="header-logo" src="img/FSL-crest-md.png"/>
+					<img className="header-logo" src="/img/FSL-crest-md.png"/>
 				</a>
 				<ul className="right">
 					<li>
